@@ -35,6 +35,8 @@ module ALU(input [5:0] A, B, input [2:0] fxn, output [5:0] X);
     _twoscompliment fxn_op2(.x(A), .y(op2));
     _twoscompliment fxn_op3(.x(B), .y(op3));
     _6bit_ripple_adder fxn_op6(.x(A), .y(B), .sel(1'b0), .sum(op6), .overflow(), .c_out());
-    _6bit_ripple_adder fxn_op7(.x(A), .y(B), .sel(1'b1), .sum(op6), .overflow(), .c_out());
+    _6bit_ripple_adder fxn_op7(.x(A), .y(B), .sel(1'b1), .sum(op7), .overflow(), .c_out());
     
+    _multiplexer get_op(.in0(op0), .in1(op1), .in2(op2), .in3(op3), .in4(op4), .in5(op5), .in6(op6), .in7(op7), .sel(fxn), .out(X));
+
 endmodule
