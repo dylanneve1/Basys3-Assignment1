@@ -1,21 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Trinity College Dublin
+// Engineer: Dylan Neve (21364333)
 // 
 // Create Date: 02/25/2025 07:16:06 PM
-// Design Name: 
+// Design Name: ALU
 // Module Name: ALU_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Project Name: Assignment1
+// Target Devices: Basys 3
 // 
 //////////////////////////////////////////////////////////////////////////////////
 

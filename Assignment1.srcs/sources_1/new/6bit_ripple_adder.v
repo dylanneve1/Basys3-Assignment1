@@ -1,21 +1,13 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Trinity College Dublin
+// Engineer: Dylan Neve (21364333)
 // 
 // Create Date: 02/11/2025 01:09:54 PM
-// Design Name: 
+// Design Name: ALU
 // Module Name: 6bit_ripple_adder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Project Name: Assignment1
+// Target Devices: Basys 3
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -24,6 +16,7 @@ module _6bit_ripple_adder (input [5:0] x, y, input sel, output overflow, c_out, 
     wire c1, c2, c3, c4, c5, c6;
     wire [5:0] y_p;
     
+    // Calculate the twos compliment of y
     assign y_p = sel ? ~y:y;
     
     FullAdder bit0 (x[0], y_p[0], sel, sum[0], c1);

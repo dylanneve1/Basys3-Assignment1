@@ -1,3 +1,17 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: Trinity College Dublin
+// Engineer: Dylan Neve (21364333)
+// 
+// Create Date: 02/11/2025 01:09:14 PM
+// Design Name: ALU
+// Module Name: FullAdder
+// Project Name: Assignment1
+// Target Devices: Basys 3
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 module FullAdder(a, b, cin, s, cout);
   // 3C7 LabD 2010
   // a and b are the bits to add
