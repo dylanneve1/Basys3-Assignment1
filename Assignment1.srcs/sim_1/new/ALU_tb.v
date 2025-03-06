@@ -50,8 +50,8 @@ module ALU_tb;
         // B = 001010 (10) -> Expected X = -10 = 110110
         A = 6'bxxxxxx; B = 6'b001010; fxn = 3'b011; #20;
 
-        // Test 5: fxn = 100, A < B flag (output 6'b000001 if true)
-        // A = 001000 (8), B = 010000 (16) -> Expected X = 000001
+        // Test 5: fxn = 100, A < B flag (output 6'b111111 if true)
+        // A = 001000 (8), B = 010000 (16) -> Expected X = 111111
         A = 6'b001000; B = 6'b010000; fxn = 3'b100; #20;
 
         // Test 6: fxn = 101, A NXOR B (bitwise XNOR)

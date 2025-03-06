@@ -7,7 +7,7 @@
 // Design Name: ALU
 // Module Name: _greaterthan
 // Project Name: Assignment1
-// Target Devices: Basys3
+// Target Devices: Basys 3
 //
 //////////////////////////////////////////////////////////////////////////////////
 
