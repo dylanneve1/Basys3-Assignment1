@@ -5,14 +5,14 @@
 // 
 // Create Date: 02/25/2025 01:40:44 PM
 // Design Name: ALU
-// Module Name: _multiplexer
+// Module Name: _multiplexer_2bit
 // Project Name: Assignmen1
 // Target Devices: Basys 3
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module _multiplexer(input [5:0] in0, in1, in2, in3, in4, in5, in6, in7, input [2:0] sel, output reg [5:0] out);
+module _multiplexer_2bit(input [1:0] in0, in1, in2, in3, in4, in5, in6, in7, input [2:0] sel, output reg [1:0] out);
     // Calculate which value should be passed to out based on sel
     always @(*) begin
         case(sel)

@@ -27,11 +27,11 @@ module ALU_tb;
     initial begin
         // Print header
         $display("----------------------------------------------------------");
-        $display("| Time (ns)              | fxn |   A    |   B    |   X    |");
+        $display("| fxn |   A    |   B    |   X    |");
         $display("----------------------------------------------------------");
 
         // Monitor output with aligned formatting
-        $monitor("| %6t   | %3b | %6b | %6b | %6b |", $time, fxn, A, B, X);
+        $monitor("| %3b | %6b | %6b | %6b |", fxn, A, B, X);
         
         
         // Test 1: fxn = 000, Pass A

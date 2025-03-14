@@ -13,10 +13,11 @@
 
 
 module _greaterthan(input wire [5:0] a, b, output wire [5:0] lt_flag);
+    // Temporary bit to store result of ge8
     wire ge8_out;
     // Sign-extend 6-bit numbers to 8 bits (using the MSB as sign)
     ge8 ge_inst(.a({{2{a[5]}}, a}), .b({{2{b[5]}}, b}), .ge(ge8_out));
     // A < B is true if A is NOT greater than or equal to B.
-    // Output a 6-bit flag: 6'111111 if true, 6'b000000 if false.
-    assign lt_flag = (ge8_out) ? 6'b111111 : 6'b000000;
+    // Output a 6-bit flag: 6'000001 if true, 6'b000000 if false.
+    assign lt_flag = (ge8_out) ? 6'b000001 : 6'b000000;
 endmodule

@@ -13,5 +13,6 @@
 
 
 module _passthrough(input [5:0] x, output [5:0] y);
+    // Assign y (output) to x (input)
     assign y = x;
 endmodule
